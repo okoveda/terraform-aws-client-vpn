@@ -9,4 +9,5 @@ output "vpn_client_cert" {
 }
 output "vpn_client_key" {
   value = tls_private_key.root.private_key_pem
+  sensitive = true
 }
